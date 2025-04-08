@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchJobs } from '../services/Api';
+import { fetchJobs } from '../services/api.js'
 import JobCard from './JobCard';
 import { useFilters } from '../contexts/FiltersContext';
 import { useJobData } from '../contexts/JobDataContext';
