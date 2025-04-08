@@ -1,0 +1,23 @@
+export const locations = [
+    "Bangalore",
+    "Berlin",
+    "California",
+    "Chennai",
+    "Chicago",
+    "Dubai",
+    "London",
+    "Lisbon",
+    "Los Angeles",
+    "Melbourne",
+    "Mumbai",
+    "New York",
+    "Paris",
+    "San Francisco",
+    "Seoul",
+    "Singapore",
+    "Sydney",
+    "Tokyo",
+    "Toronto",
+    "Vancouver",
+    "Washington"
+  ];
