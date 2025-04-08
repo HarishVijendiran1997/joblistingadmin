@@ -2,7 +2,7 @@ import React from 'react';
 import { locations } from '../utils/locations';
 import { jobTypes } from '../utils/jobTypes';
 import { useJobData } from '../contexts/JobDataContext';
-import { createJob } from '../services/Api';
+import { createJob } from '../services/api';
 
 const JobForm = ({ setShowAddJob }) => {
 
