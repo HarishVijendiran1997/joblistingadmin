@@ -37,7 +37,7 @@ const JobForm = ({ setShowAddJob }) => {
 
   return (
     <div className='fixed top-0 left-0 right-0 bottom-0 bg-black/50 flex justify-center items-center z-30'>
-      <div className='bg-white w-full max-w-[70%] h-auto sm:h-[95%] p-5 overflow-clip flex justify-center items-center rounded-lg relative text-light'>
+      <div className='bg-white w-full sm:max-w-[70%] h-auto sm:h-[95%] p-5 overflow-clip flex justify-center items-center rounded-lg relative text-light'>
         <div>
           <div className='absolute top-3 right-3' onClick={() => setShowAddJob(false)}>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#636363">
@@ -98,7 +98,7 @@ const JobForm = ({ setShowAddJob }) => {
             </div>
 
             {/* Job Type */}
-            <div className='flex flex-col text-[]'>
+            <div className='flex flex-col'>
               <label htmlFor="jobType" className='mb-1 mt-0'>Job Type</label>
               <select
                 id="jobType"
@@ -156,7 +156,7 @@ const JobForm = ({ setShowAddJob }) => {
                   />
                 </div>
 
-                {/* Application Deadline */}
+                {/* Company Website */}
                 <div className='flex flex-col w-full'>
                   <label htmlFor="companyWebsite" className='mb-1 mt-0'>Company Website</label>
                   <input

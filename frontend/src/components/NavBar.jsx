@@ -12,7 +12,7 @@ const NavBar = () => {
 
     return (
         <nav className='flex justify-center items-center'>
-            <div className='bg-[#FCFCFC] w-[890px] h-[80px] flex drop-shadow-[0px_2px_2px_rgba(127, 127, 127, 0.8)]-[#FCFCFC] justify-evenly items-center shadow-md rounded-full' >
+            <div className='bg-[#FCFCFC] sm:w-[890px] w-full sm:h-[80px] h-auto sm:pb-0 pb-5 flex sm:flex-nowrap flex-wrap drop-shadow-[0px_2px_2px_rgba(127, 127, 127, 0.8)]-[#FCFCFC] justify-evenly items-center shadow-md sm:rounded-full' >
                 <div>
                     <svg width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M24.33 5.41968L24.8852 23.3961L39.6353 13.9324L24.33 5.41968Z" fill="#333333" />
@@ -63,19 +63,19 @@ const NavBar = () => {
                     </svg>
                 </div>
                 <div>
-                    <button className='transition-all z-10 duration-200 rounded-lg px-5 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
+                    <button className='transition-all z-10 duration-200 rounded-lg sm:px-5 px-2 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
                         <a href="#" className="text-gray-700">Home</a>
                     </button>
-                    <button className='transition-all z-10 duration-200 rounded-lg px-5 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
+                    <button className='transition-all z-10 duration-200 rounded-lg sm:px-5 px-2 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
                         <a href="#" className="text-gray-700">Find Jobs</a>
                     </button>
-                    <button className='transition-all z-10 duration-200 rounded-lg px-5 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
+                    <button className='transition-all z-10 duration-200 rounded-lg sm:px-5 px-2 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
                         <a href="#" className="text-gray-700">Find Talents</a>
                     </button>
-                    <button className='transition-all z-10 duration-200 rounded-lg px-5 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
+                    <button className='transition-all z-10 duration-200 rounded-lg sm:px-5 px-2 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
                         <a href="#" className="text-gray-700">About us</a>
                     </button>
-                    <button className='transition-all z-10 duration-200 rounded-lg px-5 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
+                    <button className='transition-all z-10 duration-200 rounded-lg sm:px-5 px-2 py-2 hover:translate-y-1 hover:translate-x-1 hover:shadow-md whitespace-nowrap'>
                         <a href="#" className="text-gray-700">Testimonials</a>
                     </button>
                 </div>
