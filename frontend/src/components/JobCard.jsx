@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { differenceInHours, differenceInMinutes } from "date-fns";
 const JobCard = ({ job }) => {
 
+    const [logoExists, setLogoExists] = useState(true);
     const salaryAverage = Math.round(job.salaryMin + job.salaryMax) / 2;
     const yearlySalaryLPA = `${(salaryAverage * 12 / 100000).toFixed().toLocaleString()} LPA`;
 
-    
+
     const hoursAgo = differenceInHours(new Date(), new Date(job.createdAt));
     let timeAgo = '';
     if (hoursAgo < 1) {
@@ -24,11 +25,18 @@ const JobCard = ({ job }) => {
                 <div className='w-20 h-20 bg-gradient-to-b from-[#FEFEFD] to-[#F1F1F1] border border-white rounded-lg drop-shadow-md'>
 
                     <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden mx-auto my-2">
-                        <img
-                            src={`https://icons.duckduckgo.com/ip3/${job.companyWebsite}.ico`}
-                            alt={`${job.company} Logo`}
-                            className="w-full h-full object-cover"
-                        />
+                        {logoExists ? (
+                            <img
+                                src={`https://icons.duckduckgo.com/ip3/${job.companyWebsite}.ico`}
+                                alt={`${job.company} Logo`}
+                                className="w-full h-full object-cover"
+                                onError={() => setLogoExists(false)}
+                            />
+                        ) : (
+                            <span className="text-sm font-bold text-gray-700">
+                                {job.company?.slice(0, 2).toUpperCase()}
+                            </span>
+                        )}
                     </div>
                 </div>
                 <h2 className="text-sm rounded-lg bg-[#B0D9FF] px-2.5 py-1.5">{timeAgo}</h2>

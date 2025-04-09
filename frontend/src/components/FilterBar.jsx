@@ -102,11 +102,11 @@ const FilterBar = () => {
 
 
 
-                    <div className='flex justify-center items-center -mt-8'>
+                    <div className='flex justify-center items-center -mt-8 '>
 
 
                         <div className="px-0 sm:px-8 mb-5 sm:mt-0 mt-2 sm:mb-0">
-                            <label className=" justify-between w-70 mt-5 sm:mt-0 font-semibold space-y-3 flex">
+                            <label className=" justify-between w-60 mt-5 sm:mt-0 font-semibold space-y-3 flex">
                                 <div>
                                     Salary per Month
                                 </div>
