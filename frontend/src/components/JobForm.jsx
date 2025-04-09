@@ -3,18 +3,20 @@ import { locations } from '../utils/locations';
 import { jobTypes } from '../utils/jobTypes';
 import { useJobData } from '../contexts/JobDataContext';
 import { createJob } from '../services/api';
+import { ToastContainer, toast } from 'react-toastify';
 
 const JobForm = ({ setShowAddJob }) => {
 
   const { jobData, setJobData } = useJobData()
 
-  console.log("jobData state:", jobData);
+  // console.log("jobData state:", jobData);
 
   const handlePublish = async () => {
     try {
-      console.log("Publishing Job:", jobData);
+      // console.log("Publishing Job:", jobData);
       const response = await createJob(jobData);
-      console.log("Job posted successfully:", response.data);
+      // console.log("Job posted successfully:", response.data);
+      toast.success("Job posted successfully")
 
       setShowAddJob(false);
       setJobData({
@@ -30,7 +32,8 @@ const JobForm = ({ setShowAddJob }) => {
       });
 
     } catch (error) {
-      console.error("Error posting job:", error);
+      // console.error("Error posting job:", error);
+      toast.error("Error posting job:")
     }
   };
 

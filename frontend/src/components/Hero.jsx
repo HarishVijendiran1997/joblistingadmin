@@ -21,7 +21,7 @@ const Hero = () => {
   const { jobData } = useJobData()
 
   useEffect(() => {
-    console.log(filters);
+    // console.log(filters);
     const getJobs = async () => {
       try {
         const res = await fetchJobs(filters);

@@ -7,7 +7,7 @@ const NavBar = () => {
 
     const handleCreateJobsButton = () => {
         setShowAddJob(true)
-        console.log(showAddJob)
+        // console.log(showAddJob)
     }
 
     return (

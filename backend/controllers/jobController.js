@@ -38,7 +38,7 @@ const getJobs = async (req, res) => {
         .json({ message: "No jobs found matching your criteria" });
     }
     res.status(200).json(jobs);
-    console.log(jobs);
+    // console.log(jobs);
   } catch (error) {
     // console.error("Error fetching jobs:", error);
     res.status(500).json({ message: "Server error while fetching jobs" });
