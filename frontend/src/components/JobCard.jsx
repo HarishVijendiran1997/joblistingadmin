@@ -18,7 +18,7 @@ const JobCard = ({ job }) => {
 
 
     return (
-        <div className="bg-white p-4 rounded-lg shadow-lg drop-shadow-[#D3D3D326] max-w-[316px] max-h-[390px]">
+        <div className="bg-white p-4 rounded-lg shadow-lg drop-shadow-[#D3D3D326] sm:max-w-[316px] max-w-screen max-h-[390px]">
 
 
             <div className="flex items-start justify-between mb-5">
